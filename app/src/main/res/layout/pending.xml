@@ -8,7 +8,6 @@
 	android:ellipsize="marquee"
     android:singleLine="true"
 	android:text="@string/pending_label"
-	android:textColor="@drawable/text"
-	android:background="@drawable/body"
+	android:textColor="@color/text"
+	android:background="@color/body"
 	/>
-

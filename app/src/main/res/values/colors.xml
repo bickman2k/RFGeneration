@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <drawable name="background">#ffcccccc</drawable>
-    <drawable name="body">#ffeeeeee</drawable>
-    <drawable name="border">#ff808080</drawable>
-    <drawable name="splash">#ffcc0000</drawable>
-    <drawable name="text">#ff000000</drawable>
-    <drawable name="textlight">#ff666666</drawable>
-    <drawable name="selected">#ffcc9999</drawable>
-    <drawable name="link">#ff404040</drawable>
+    <color name="background">#ffcccccc</color>
+    <color name="body">#ffeeeeee</color>
+    <color name="border">#ff808080</color>
+    <color name="splash">#ffcc0000</color>
+    <color name="text">#ff000000</color>
+    <color name="textlight">#ff666666</color>
+    <color name="selected">#ffcc9999</color>
+    <color name="link">#ff404040</color>
     
-    <drawable name="qty">#ff9e0b0f</drawable>
-    <drawable name="box">#ff003471</drawable>
-    <drawable name="man">#ff007236</drawable>
+    <color name="qty">#ff9e0b0f</color>
+    <color name="box">#ff003471</color>
+    <color name="man">#ff007236</color>
     
-    <drawable name="transparent">#00ffffff</drawable>
-    <drawable name="altercolor1">#ffeeeeee</drawable>
-    <drawable name="altercolor2">#ffdddddd</drawable>
-    <drawable name="altercolor3">#ffcc0000</drawable>
-    <drawable name="altercolor4">#ff808080</drawable>
+    <color name="transparent">#00ffffff</color>
+    <color name="altercolor1">#ffeeeeee</color>
+    <color name="altercolor2">#ffdddddd</color>
+    <color name="altercolor3">#ffcc0000</color>
+    <color name="altercolor4">#ff808080</color>
 </resources>
 

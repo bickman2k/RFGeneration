@@ -2,7 +2,7 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
 	android:layout_width="fill_parent"
 	android:layout_height="fill_parent"
-	android:background="@drawable/background"
+	android:background="@color/background"
 	android:orientation="vertical">
     
     <!-- Content -->
@@ -21,13 +21,13 @@
 	            android:layout_width="fill_parent"
 	            android:layout_height="wrap_content"
 	            android:layout_margin="5dip"
-	            android:background="@drawable/border" >
+	            android:background="@color/border" >
 
 	            <LinearLayout
 	                android:layout_width="fill_parent"
 	                android:layout_height="fill_parent"
 	                android:layout_margin="1dip"
-	                android:background="@drawable/body"
+	                android:background="@color/body"
 	                android:orientation="vertical" >
 	                
 	                <RelativeLayout
@@ -39,18 +39,23 @@
 		                    android:layout_height="wrap_content"
 		                    android:text="@string/folders_header"
 		                    android:textAppearance="?android:attr/textAppearanceLarge"
-		                    android:textColor="@drawable/splash"
+		                    android:textColor="@color/splash"
 		                    android:textStyle="bold"
+							android:layout_marginStart="5dp"
 		                    android:layout_marginLeft="5dp" />
 		                
 		                <ImageView
 	                        android:id="@+id/add_game_button"
+							android:contentDescription="@string/add_game_button_label"
 	                        android:layout_width="wrap_content"
 	                        android:layout_height="wrap_content"
 	                        android:layout_alignParentRight="true"
+							android:layout_alignParentEnd="true"
 	                        android:layout_centerVertical="true"
 	                        android:layout_marginRight="5dp"
+							android:layout_marginEnd="5dp"
 	                        android:clickable="true"
+							android:focusable="true"
 	                        android:src="@drawable/add" />
 	                
 	                </RelativeLayout>
@@ -61,7 +66,7 @@
 	                    android:layout_marginBottom="5dip"
 	                    android:layout_marginLeft="5dip"
 	                    android:layout_marginRight="5dip"
-	                    android:background="@drawable/splash" />
+	                    android:background="@color/splash" />
 	                
 	                <TableLayout
 	                    android:id="@+id/game_folder_table"
@@ -80,13 +85,13 @@
 	            android:layout_width="fill_parent"
 	            android:layout_height="wrap_content"
 	            android:layout_margin="5dip"
-	            android:background="@drawable/border" >
+	            android:background="@color/border" >
 
 	            <LinearLayout
 	                android:layout_width="fill_parent"
 	                android:layout_height="fill_parent"
 	                android:layout_margin="1dip"
-	                android:background="@drawable/body"
+	                android:background="@color/body"
 	                android:orientation="vertical" >
 	                
 	                <TextView
@@ -94,8 +99,9 @@
 	                    android:layout_height="wrap_content"
 	                    android:text="@string/images_header"
 	                    android:textAppearance="?android:attr/textAppearanceLarge"
-	                    android:textColor="@drawable/splash"
+	                    android:textColor="@color/splash"
 	                    android:textStyle="bold"
+						android:layout_marginStart="5dp"
 	                    android:layout_marginLeft="5dp" />
 	                
 	                <View
@@ -104,7 +110,7 @@
 	                    android:layout_marginBottom="5dip"
 	                    android:layout_marginLeft="5dip"
 	                    android:layout_marginRight="5dip"
-	                    android:background="@drawable/splash" />
+	                    android:background="@color/splash" />
 	                
 	                <HorizontalScrollView
 	                    android:layout_width="fill_parent"
@@ -122,87 +128,91 @@
 	                        <LinearLayout
 					            android:layout_width="fill_parent"
 					            android:layout_height="wrap_content"
-					            android:background="@drawable/border" >
+					            android:background="@color/border" >
 					            
 		                        <TextView
 		                            android:id="@+id/game_front_button"
 		                            android:layout_width="wrap_content"
 		                            android:layout_height="wrap_content"
 		                            android:layout_marginLeft="1dip"
+									android:layout_marginStart="1dip"
 		                            android:layout_marginTop="1dip"
 		                            android:layout_marginBottom="1dip"
 		                            android:padding="5dp"
 		                            android:textAppearance="?android:attr/textAppearanceLarge"
 		                            android:text="@string/image_front_label"
-		                            android:textColor="@drawable/border"
-		                            android:background="@drawable/background" />
+		                            android:textColor="@color/border"
+		                            android:background="@color/background" />
 	                        
 	                        </LinearLayout>
 	                        
 	                        <LinearLayout
 					            android:layout_width="fill_parent"
 					            android:layout_height="wrap_content"
-					            android:background="@drawable/border" >
+					            android:background="@color/border" >
 					            
 		                        <TextView
 		                            android:id="@+id/game_back_button"
 		                            android:layout_width="wrap_content"
 		                            android:layout_height="wrap_content"
 		                            android:layout_marginLeft="1dip"
+									android:layout_marginStart="1dip"
 		                            android:layout_marginTop="1dip"
 		                            android:layout_marginBottom="1dip"
 		                            android:padding="5dp"
 		                            android:textAppearance="?android:attr/textAppearanceLarge"
 		                            android:text="@string/image_back_label"
-		                            android:textColor="@drawable/border"
-		                            android:background="@drawable/background" />
+		                            android:textColor="@color/border"
+		                            android:background="@color/background" />
 	                        
 	                        </LinearLayout>
 	                        
 	                        <LinearLayout
 					            android:layout_width="fill_parent"
 					            android:layout_height="wrap_content"
-					            android:background="@drawable/border" >
+					            android:background="@color/border" >
 					            
 		                        <TextView
 		                            android:id="@+id/game_screenshot_button"
 		                            android:layout_width="wrap_content"
 		                            android:layout_height="wrap_content"
 		                            android:layout_marginLeft="1dip"
+									android:layout_marginStart="1dip"
 		                            android:layout_marginTop="1dip"
 		                            android:layout_marginBottom="1dip"
 		                            android:padding="5dp"
 		                            android:textAppearance="?android:attr/textAppearanceLarge"
 		                            android:text="@string/image_screenshot_label"
-		                            android:textColor="@drawable/border"
-		                            android:background="@drawable/background" />
+		                            android:textColor="@color/border"
+		                            android:background="@color/background" />
 	                        
 	                        </LinearLayout>
 	                        
 	                        <LinearLayout
 					            android:layout_width="fill_parent"
 					            android:layout_height="wrap_content"
-					            android:background="@drawable/border" >
+					            android:background="@color/border" >
 					            
 		                        <TextView
 		                            android:id="@+id/game_game_button"
 		                            android:layout_width="wrap_content"
 		                            android:layout_height="wrap_content"
 		                            android:layout_marginLeft="1dip"
+									android:layout_marginStart="1dip"
 		                            android:layout_marginTop="1dip"
 		                            android:layout_marginBottom="1dip"
 		                            android:padding="5dp"
 		                            android:textAppearance="?android:attr/textAppearanceLarge"
 		                            android:text="@string/image_game_label"
-		                            android:textColor="@drawable/border"
-		                            android:background="@drawable/background" />
+		                            android:textColor="@color/border"
+		                            android:background="@color/background" />
 	                        
 	                        </LinearLayout>
 	                        
 	                        <LinearLayout
 					            android:layout_width="fill_parent"
 					            android:layout_height="wrap_content"
-					            android:background="@drawable/border" >
+					            android:background="@color/border" >
 					            
 		                        <TextView
 		                            android:id="@+id/game_manual_button"
@@ -212,8 +222,8 @@
 		                            android:padding="5dp"
 		                            android:textAppearance="?android:attr/textAppearanceLarge"
 		                            android:text="@string/image_manual_label"
-		                            android:textColor="@drawable/border"
-		                            android:background="@drawable/background" />
+		                            android:textColor="@color/border"
+		                            android:background="@color/background" />
 	                        
 	                        </LinearLayout>
 	                        							
@@ -230,13 +240,13 @@
 	            android:layout_width="fill_parent"
 	            android:layout_height="wrap_content"
 	            android:layout_margin="5dip"
-	            android:background="@drawable/border" >
+	            android:background="@color/border" >
 
 	            <LinearLayout
 	                android:layout_width="fill_parent"
 	                android:layout_height="fill_parent"
 	                android:layout_margin="1dip"
-	                android:background="@drawable/body"
+	                android:background="@color/body"
 	                android:orientation="vertical" >
 	                
 	                <TextView
@@ -244,9 +254,10 @@
 	                    android:layout_height="wrap_content"
 	                    android:text="@string/detail_header"
 	                    android:textAppearance="?android:attr/textAppearanceLarge"
-	                    android:textColor="@drawable/splash"
+	                    android:textColor="@color/splash"
 	                    android:textStyle="bold"
-	                    android:layout_marginLeft="5dp" />
+	                    android:layout_marginLeft="5dp"
+						android:layout_marginStart="5dp"/>
 	                
 	                <View
 	                    android:layout_width="fill_parent"
@@ -254,7 +265,7 @@
 	                    android:layout_marginBottom="5dip"
 	                    android:layout_marginLeft="5dip"
 	                    android:layout_marginRight="5dip"
-	                    android:background="@drawable/splash" />
+	                    android:background="@color/splash" />
 	                
 	                <TableLayout
 	                    android:id="@+id/game_details_table"
@@ -276,13 +287,13 @@
 	            android:layout_width="fill_parent"
 	            android:layout_height="wrap_content"
 	            android:layout_margin="5dip"
-	            android:background="@drawable/border" >
+	            android:background="@color/border" >
 
 	            <LinearLayout
 	                android:layout_width="fill_parent"
 	                android:layout_height="fill_parent"
 	                android:layout_margin="1dip"
-	                android:background="@drawable/body"
+	                android:background="@color/body"
 	                android:orientation="vertical" >
 	                
 	                <TextView
@@ -290,8 +301,9 @@
 	                    android:layout_height="wrap_content"
 	                    android:text="@string/credits_header"
 	                    android:textAppearance="?android:attr/textAppearanceLarge"
-	                    android:textColor="@drawable/splash"
+	                    android:textColor="@color/splash"
 	                    android:textStyle="bold"
+						android:layout_marginStart="5dp"
 	                    android:layout_marginLeft="5dp" />
 	                
 	                <View
@@ -300,7 +312,7 @@
 	                    android:layout_marginBottom="5dip"
 	                    android:layout_marginLeft="5dip"
 	                    android:layout_marginRight="5dip"
-	                    android:background="@drawable/splash" />
+	                    android:background="@color/splash" />
 	                
 	                <LinearLayout
 	                    android:id="@+id/game_credits_table"
