@@ -2,12 +2,12 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
 	android:layout_width="fill_parent"
 	android:layout_height="fill_parent"
-	android:background="@drawable/body"
+	android:background="@color/body"
 	android:orientation="vertical">
 
 	<!-- Content -->
 	<ListView
-		android:id="@+id/android:list"
+		android:id="@android:id/list"
 		android:layout_width="fill_parent"
 		android:layout_height="fill_parent"
 		android:cacheColorHint="#00000000" 

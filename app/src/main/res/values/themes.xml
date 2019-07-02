@@ -13,14 +13,14 @@
            parent="@style/Widget.AppCompat.Light.ActionBar.Solid.Inverse">
 
         <!-- Support library compatibility -->
-        <item name="background">@drawable/splash</item>
+        <item name="background">@color/splash</item>
         <item name="subtitleTextStyle">@style/MyActionBarTitleText</item>
     </style>
     
     <!-- ActionBar title text -->
     <style name="MyActionBarTitleText"
            parent="@style/TextAppearance.AppCompat.Widget.ActionBar.Subtitle">
-        <item name="android:textColor">@drawable/body</item>
+        <item name="android:textColor">@color/body</item>
         <!-- The textColor property is backward compatible with the Support Library -->
     </style>
 </resources>

@@ -3,12 +3,12 @@
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
     android:orientation="vertical"
-    android:background="@drawable/background">
+    android:background="@color/background">
 
     <LinearLayout
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
-        android:background="@drawable/background"
+        android:background="@color/background"
         android:gravity="bottom"
         android:orientation="vertical" >
 			
@@ -25,13 +25,13 @@
 		            android:layout_height="wrap_content"
 		            android:layout_centerInParent="true"
 		            android:layout_margin="25dip"
-		            android:background="@drawable/border" >
+		            android:background="@color/border" >
 
 		            <LinearLayout
 		                android:layout_width="fill_parent"
 		                android:layout_height="fill_parent"
 		                android:layout_margin="1dip"
-		                android:background="@drawable/body"
+		                android:background="@color/body"
 		                android:orientation="vertical" >
 
 		                <TextView
@@ -41,7 +41,7 @@
 		                    android:layout_marginRight="5dip"
 		                    android:text="@string/login_header"
 		                    android:textAppearance="?android:attr/textAppearanceLarge"
-		                    android:textColor="@drawable/splash"
+		                    android:textColor="@color/splash"
 		                    android:textStyle="bold" />
 
 		                <View
@@ -50,15 +50,16 @@
 		                    android:layout_marginBottom="5dip"
 		                    android:layout_marginLeft="5dip"
 		                    android:layout_marginRight="5dip"
-		                    android:background="@drawable/splash" />
+		                    android:background="@color/splash" />
 
 		                <TextView
 		                    android:layout_width="wrap_content"
 		                    android:layout_height="wrap_content"
 		                    android:layout_marginLeft="5dip"
+							android:layout_marginStart="5dip"
 		                    android:text="@string/username_label"
 		                    android:textAppearance="?android:attr/textAppearanceMedium"
-		                    android:textColor="@drawable/text" />
+		                    android:textColor="@color/text" />
 
 		                <EditText
 		                    android:id="@+id/login_username"
@@ -71,9 +72,10 @@
 		                    android:layout_width="wrap_content"
 		                    android:layout_height="wrap_content"
 		                    android:layout_marginLeft="5dip"
+							android:layout_marginStart="5dip"
 		                    android:text="@string/password_label"
 		                    android:textAppearance="?android:attr/textAppearanceMedium"
-		                    android:textColor="@drawable/text" />
+		                    android:textColor="@color/text" />
 
 		                <EditText
 		                    android:id="@+id/login_password"
@@ -108,9 +110,10 @@
 			    android:layout_height="wrap_content"
 			    android:layout_gravity="center_horizontal"
 			    android:text="@string/about_label"
-			    android:textColor="@drawable/link" 
+			    android:textColor="@color/link"
 			    android:textAppearance="?android:attr/textAppearanceMedium" 
-			    android:clickable="true" 
+			    android:clickable="true"
+				android:focusable="true"
 			    android:layout_marginBottom="25dp"/>
 			
 			<TextView
@@ -119,9 +122,10 @@
 			    android:layout_height="wrap_content"
 			    android:layout_gravity="center_horizontal"
 			    android:text="@string/register_label"
-			    android:textColor="@drawable/link" 
+			    android:textColor="@color/link"
 			    android:textAppearance="?android:attr/textAppearanceMedium"
-			    android:clickable="true" 
+			    android:clickable="true"
+				android:focusable="true"
 			    android:layout_marginBottom="25dp" />
 			
     </LinearLayout>

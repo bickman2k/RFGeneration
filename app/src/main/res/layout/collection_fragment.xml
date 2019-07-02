@@ -2,7 +2,7 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
 	android:layout_width="fill_parent"
 	android:layout_height="fill_parent"
-	android:background="@drawable/body"
+	android:background="@color/body"
 	android:orientation="vertical">
 
     <View
@@ -12,7 +12,7 @@
         android:visibility="gone" />
     
 	<fragment
-	   	android:name="com.jgrue.rfgeneration.CollectionListFragment"
+	   	android:name="com.rfgeneration.app.CollectionListFragment"
 	    android:layout_width="fill_parent"
 	    android:layout_height="fill_parent"
 	    android:id="@+id/collection_fragment" >

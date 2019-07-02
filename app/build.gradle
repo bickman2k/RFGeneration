@@ -1,13 +1,13 @@
 apply plugin: 'com.android.application'
 
 android {
-    compileSdkVersion 19
-    buildToolsVersion "21.1.2"
+    compileSdkVersion 29
+    buildToolsVersion "28.0.3"
 
     defaultConfig {
-        applicationId "com.jgrue.rfgeneration"
-        minSdkVersion 7
-        targetSdkVersion 19
+        applicationId "com.rfgeneration.app"
+        minSdkVersion 16
+        targetSdkVersion 29
     }
 
     buildTypes {
@@ -19,9 +19,9 @@ android {
 }
 
 dependencies {
-    compile 'com.android.support:support-v4:19.1.0'
-    compile 'com.android.support:appcompat-v7:19.1.0'
-    compile files('libs/CWAC-AdapterWrapper.jar')
-    compile 'org.jsoup:jsoup:1.6.1'
-    compile 'au.com.bytecode:opencsv:2.4'
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    implementation 'androidx.appcompat:appcompat:1.0.2'
+    implementation files('libs/CWAC-AdapterWrapper.jar')
+    implementation 'org.jsoup:jsoup:1.11.3'
+    implementation 'au.com.bytecode:opencsv:2.4'
 }

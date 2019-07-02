@@ -39,6 +39,10 @@ huge game database to find a wealth of information, images, and more.
     <string name="no_folders_label">This game does not appear in any folders.</string>
     <string name="tools_header">Tools</string>
     <string name="random_label">Random Game</string>
+    <string name="folder_label">Folder:</string>
+    <string name="console_label">Console:</string>
+    <string name="type_label">Type:</string>
+    <string name="add_game_button_label">Add Game button</string>
     <style name="ButtonText">
 	    <item name="android:textColor">#ffffff</item>
 	    <item name="android:gravity">center</item>

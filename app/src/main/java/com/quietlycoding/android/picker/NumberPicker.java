@@ -31,7 +31,7 @@ import android.view.View.OnLongClickListener;
 import android.widget.TextView;
 import android.widget.LinearLayout;
 import android.widget.EditText;
-import com.jgrue.rfgeneration.R;
+import com.rfgeneration.app.R;
 
 /**
  * This class has been pulled from the Android platform source code, its an internal widget that hasn't been

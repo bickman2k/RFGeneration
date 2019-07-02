@@ -4,14 +4,14 @@
     android:layout_height="wrap_content"
     android:stretchColumns="1"
     android:shrinkColumns="1"
-    android:background="@drawable/body"
+    android:background="@color/body"
     android:id="@+id/gamerow_layout">
     <TableRow>
     	<TextView
             android:id="@+id/console"
             android:layout_width="0dip"
             android:layout_height="wrap_content"
-            android:textColor="@drawable/text"
+            android:textColor="@color/text"
             android:ellipsize="marquee"
             android:singleLine="true"
         	android:gravity="center_horizontal"
@@ -21,7 +21,7 @@
             android:id="@+id/title"
             android:layout_width="0dip"
             android:layout_height="wrap_content"
-            android:textColor="@drawable/text"
+            android:textColor="@color/text"
         	android:ellipsize="marquee" 
         	android:layout_weight="0.87"/>
     </TableRow>
@@ -46,15 +46,16 @@
 	            android:id="@+id/publisher"
 	            android:singleLine="true"
 	            android:ellipsize="marquee"
-	            android:textColor="@drawable/text"/>
+	            android:textColor="@color/text"/>
      	    <TextView
 	            android:id="@+id/quantity"
 	            android:layout_width="wrap_content"
 	            android:layout_height="wrap_content"
-	            android:textColor="@drawable/text" 
-	            android:layout_gravity="right"
+	            android:textColor="@color/text"
+	            android:layout_gravity="end"
 	            android:visibility="gone"
-	            android:paddingRight="10dp"/>
+	            android:paddingRight="10dp"
+				android:paddingEnd="10dp"/>
 	        </TableRow>
         </TableLayout>
     </TableRow>
